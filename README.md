@@ -6,3 +6,13 @@ We will work under a spring backlog methodology where we will perform springs ev
 
 https://trello.com/b/Y2AjVqnt/oak-d-competition
 
+Other resources
+
+https://www.kickstarter.com/projects/opencv/opencv-ai-kit
+
+https://docs.luxonis.com/
+
+https://colab.research.google.com/github/luxonis/depthai-ml-training/blob/master/colab-notebooks/Easy_Object_Detection_With_Custom_Data_Demo_Training.ipynb
+
+
+
