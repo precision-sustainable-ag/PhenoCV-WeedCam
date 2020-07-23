@@ -1,7 +1,7 @@
 ## deeplabv3+
 Supplied is :
 
-* A compressed tensorflow pb model: 4_class_model_v1.0.pb - Download it here: https://drive.google.com/file/d/1tVvFPu79VueEet4P-brgk4ijArm1sUCs/view
+* A compressed tensorflow pb model: models/4_class_model_v1.0/4_class_model_v1.0.pb - Download it here: https://drive.google.com/file/d/1tVvFPu79VueEet4P-brgk4ijArm1sUCs/view
 * A python script to use the model to segment images: deploy.py
 * Three example images and corresponding outputs.
 
