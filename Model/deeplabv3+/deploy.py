@@ -16,7 +16,7 @@ futures = []
 current_input_size = 2048
 im_input_path = "images/"
 im_output_path = "output/"
-current_model = "4_class_model_v1.0/4_class_model_v1.0.pb"
+current_model = "3_class_model_v1.2/3_class_model_v1.2.pb"
 
 class DeepLabModel():
     """Class to load deeplab model and run inference."""
@@ -61,20 +61,20 @@ class DeepLabModel():
           seg_map: np.array. values of pixels are classes
         """
 
-        width, height = image.size
+        #width, height = image.size
 
-        resize_ratio = 1.0 * self.INPUT_SIZE / max(width, height)
-        target_size = (int(resize_ratio * width), int(resize_ratio * height))
+        #resize_ratio = 1.0 * self.INPUT_SIZE / max(width, height)
+        #target_size = (int(resize_ratio * width), int(resize_ratio * height))
 
-        resized_image = image.convert('RGB').resize(target_size, Image.ANTIALIAS)
+        #resized_image = image.convert('RGB').resize(target_size, Image.ANTIALIAS)
 
         batch_seg_map, batch_prob_map = self.sess.run(
            [self.OUTPUT_TENSOR_NAME,
            self.SOFTMAX_TENSOR_NAME],
-           feed_dict={self.INPUT_TENSOR_NAME: [np.asarray(resized_image)]})
+           feed_dict={self.INPUT_TENSOR_NAME: [np.asarray(image)]})
 
         seg_map = batch_seg_map[0]        
-        seg_map = resize(seg_map.astype(np.uint8), (height, width), preserve_range=True, order=0, anti_aliasing=False)
+        #seg_map = resize(seg_map.astype(np.uint8), (height, width), preserve_range=True, order=0, anti_aliasing=False)
 
         prob_map = batch_prob_map[0]        
         
@@ -101,7 +101,7 @@ for im_filename_long in glob.glob(im_input_path + '*.jpg'):
     seg_map, prob_map = model.run(img)
     
     a = executor.submit(imageio.imsave, im_output_path_vis_seg + im_filename + "segmentation.png",(seg_map*84).astype(np.uint8), compress_level=3)
-    a = executor.submit(imageio.imsave, im_output_path_vis + im_filename + "softmax.jpg",(prob_map[:,:,(1,2,3)]*255).astype(np.uint8))
+    a = executor.submit(imageio.imsave, im_output_path_vis + im_filename + "softmax.jpg",(prob_map[:,:,(1,2,0)]*255).astype(np.uint8))
     i=i+1
     
     
