@@ -1,10 +1,10 @@
 
 ## RPi Configuration
 
-DepthAI framework installation
+**DepthAI framework installation**
 https://docs.luxonis.com/api/#raspbian
 
-Intel Neural Compute Stick 2 (NCS2) installation
+**Intel Neural Compute Stick 2 (NCS2) installation.**
 Some models, such as semantic segmentation and pose estimation, are not yet supported by DepthAI framework, so we must use the VPU as an NCS2, for this we will need to follow the steps documented in the following links:
 (Introduction anout NCS2) https://software.intel.com/content/www/us/en/develop/articles/get-started-with-neural-compute-stick.html
 https://docs.openvinotoolkit.org/latest/openvino_docs_install_guides_installing_openvino_raspbian.html
