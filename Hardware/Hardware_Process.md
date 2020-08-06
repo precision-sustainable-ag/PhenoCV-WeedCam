@@ -31,7 +31,7 @@ For the calibration process follow the instruction in thi link ([https://docs.lu
 2) Create a json file in depthAI/resources/board with the name of your board e.g WEED01.json.  
 3) Put this info into this file:  
 
-`{  
+{  
     "board_config":  
     {  
         "name": "WEED01",  
@@ -42,7 +42,7 @@ For the calibration process follow the instruction in thi link ([https://docs.lu
         "left_to_right_distance_cm": 2.7,  
         "left_to_rgb_distance_cm": 5.4  
     }  
-}`
+}
 
 4) Run this code in depthAI folder  
 `python3 calibrate.py -s SQUARE_SIZE_IN_CM -brd WEED01`.  
