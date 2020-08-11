@@ -26,7 +26,7 @@ Once you have the cameras assembled in this case please follow the calibration i
 
 ## Calibration process for our BW1098FFC Camera
 
-For the calibration process follow the instruction in thi link ([https://docs.luxonis.com/tutorials/stereo_calibration/](https://slack-redir.net/link?url=https%3A%2F%2Fdocs.luxonis.com%2Ftutorials%2Fstereo_calibration%2F)). You can keep depthAI framework to make your calibration process.  
+For the calibration process follow the instruction in thi link ([https://docs.luxonis.com/tutorials/stereo_calibration/](https://docs.luxonis.com/tutorials/stereo_calibration/)). You can keep depthAI framework to make your calibration process.  
 1) For taking images to calculate matrix calibration follow the calibrate.py script instructions, setting up a new board.  
 2) Create a json file in depthAI/resources/board with the name of your board e.g WEED01.json.  
 3) Put this info into this file:  
