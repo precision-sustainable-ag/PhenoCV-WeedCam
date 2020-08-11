@@ -14,7 +14,7 @@ futures = []
 
 # The model is currently frozen with a max input resolution of 2048x2048 pixel. Images will automatically be resized to this before inference
 current_input_size = 2048
-im_input_path = "images/"
+im_input_path = "../images/"
 im_output_path = "output/"
 current_model = "3_class_model_v1.2/3_class_model_v1.2.pb"
 
