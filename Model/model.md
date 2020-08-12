@@ -30,9 +30,6 @@ The model tested as of now is the deeplab_v3_plus_mnv3_decoder_256.pb from PINTO
     ]
 }
 ```
--```python
-
-
 
 
 ### OAK-D in NCS2 mode 
