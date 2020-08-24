@@ -30,3 +30,4 @@ https://filesender.deic.dk/?s=download&token=d3f06eb9-62ea-ea9d-903b-67fbfaf5678
 It consists of a combination of two datasets, one which has hierarchically organized labels for improved class balancing
 
 During training of the 3-class models, all labels >=3 was assigned to class 1, corresponnding to weeds.
+As part of the online data augmentation, all images were randomly scaled to 30-100% of the original size to try to overlap with the expected ground sampling distance (pixels/mm) on the embedded system.
