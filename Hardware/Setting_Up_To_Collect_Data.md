@@ -154,9 +154,9 @@ Open the terminal of RPi
 
 Type: “cd depthai”
 
-- If we want to see the images in the system please run the next CLI in the terminal. Try to have the camera without any movement at least for 30 seconds.
+- If we want to see the a preview output. The script launches a window, starts the cameras, and displays a video stream annotated with object localization metadata. But this script does not collect images. It is just to give you an idea about the image could come from the camera.
 
-Type: “./run_viewer.sh”
+Type: “python3 depthai_demo.py”
 
 - --If you want to run the script without visualization please run the next CLI in the terminal.
 
