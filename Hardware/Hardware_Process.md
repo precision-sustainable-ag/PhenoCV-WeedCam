@@ -67,4 +67,4 @@ Please note that this command line is case sensitive.
 
 ## RPi-Testing
 
-RPi image - https://drive.google.com/file/d/1faU-Q0AfdteEhEFto3AXwu9TwUCiR9rZ/view?usp=sharing
+RPi image - 
