@@ -98,7 +98,7 @@ If you have an older Micro SD card, you can reused it if you follow these steps.
 - Select the Raspian image file (you have ready in your computer). Selecting “Use Custom” option on the Raspbian Pi Imager.
 
 32GB Micro SD Card: RPi image - 
-[https://drive.google.com/file/d/1faU-Q0AfdteEhEFto3AXwu9TwUCiR9rZ/view?usp=sharing](https://drive.google.com/file/d/1faU-Q0AfdteEhEFto3AXwu9TwUCiR9rZ/view?usp=sharing)
+
 
 64GB Micro SD Card: RPi image -
 
