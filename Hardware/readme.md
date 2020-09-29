@@ -58,21 +58,7 @@ The card class determines the sustained write speed for the card; a class 4 card
 
   
 
-If you are having trouble with corruption of your Micro SD cards, make sure you follow these steps
-
-  
-
-- Make sure you are using a genuine SD card.
-
-- Make sure you are using a good quality power supply. You can check your power supply by measuring the voltage between TP1 and TP2 on the Raspberry Pi; if this drops below 4.75V when doing complex tasks then it is most likely unsuitable.
-
-- Make sure you are using a good quality USB cable for the power supply. When using a lower quality power supply, the TP1-&gt;TP2 voltage can drop below 4.75V.
-
-- Make sure you are shutting your Raspberry Pi down properly before powering it off. Type sudo halt and wait for the Pi to signal it is ready to be powered off by flashing the activity LED.
-
-  
-
-If you have an older Micro SD card, you can reused it if you follow these steps. Prepare your micro SD card if this one is not new.
+Prepare your micro SD card if this one is not new.
 
   
 
@@ -98,10 +84,9 @@ If you have an older Micro SD card, you can reused it if you follow these steps.
 - Select the Raspian image file (you have ready in your computer). Selecting “Use Custom” option on the Raspbian Pi Imager.
 
 32GB Micro SD Card: RPi image - 
-
+[https://drive.google.com/file/d/1opjc88wXK4hXJVKsq88MQ2DQLpg-RIg3/view?usp=sharing](https://drive.google.com/file/d/1opjc88wXK4hXJVKsq88MQ2DQLpg-RIg3/view?usp=sharing)
 
 64GB Micro SD Card: RPi image -
-
 [https://drive.google.com/file/d/1xDd6B9zLm1vPm9tYWBqWKqCXVQM3hGcG/view?usp=sharing](https://drive.google.com/file/d/1xDd6B9zLm1vPm9tYWBqWKqCXVQM3hGcG/view?usp=sharing)
   
   
@@ -120,11 +105,10 @@ If you have an older Micro SD card, you can reused it if you follow these steps.
 
 - Click on WRITE to write the image file into your Micro SD Card. Could take more than 1 hour.
 
-  
+- This image file has installed: Remote desktop control, TeamViewer, VNC, complete DepthAI framework and its dependencies.
 
 ## Start with DephtAI framework
 
-  
 
 - Install RD Client in you Android Device.
 
@@ -140,7 +124,7 @@ Password: paularamos
 
 - Also you can set up your own network in the RPi, but if you don’t have MiniHDMI cable it could be better if you connect the first time with the network by default. Also take into account you need to create a hotspot on the field.
 
- - Run the calibration process following steps 2,3,4, and 5 on this document:
+ - Run the **calibration** process following steps 2,3,4, and 5 on this document:
 
 [https://docs.luxonis.com/tutorials/stereo_calibration/](https://docs.luxonis.com/tutorials/stereo_calibration/)
 
@@ -154,18 +138,18 @@ Open the terminal of RPi
 
 Type: “cd depthai”
 
-- If we want to see the a preview output. The script launches a window, starts the cameras, and displays a video stream annotated with object localization metadata. But this script does not collect images. It is just to give you an idea about the image could come from the camera.
+- If we want to see the a **preview output**. The script launches a window, starts the cameras, and displays a video stream annotated with object localization metadata. But this script does not collect images. It is just to give you an idea about the image could come from the camera.
 
 Type: “python3 depthai_demo.py”
 
-- --If you want to run the script without visualization please run the next CLI in the terminal.
+- If you want to run the script to **collect images** please run the next CLI in the terminal.
 
 Type: “./run.sh”
 
-- --Check the next path:
+- Check the next path:
 
 /home/pi/depthai/field/data
 
 You could find there a lot of folders with different date and timestamp, inside of every folder you could find another bunch of folders with the same scene with 4 different frames (RGB, left, right, disparity map)
 
-- --Also you can play with the API. [https://docs.luxonis.com](https://docs.luxonis.com/tutorials/hello_world/)
+- Also you can play with the API. [https://docs.luxonis.com](https://docs.luxonis.com/tutorials/hello_world/)
