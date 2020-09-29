@@ -154,9 +154,9 @@ Open the terminal of RPi
 
 Type: “cd depthai”
 
-- If we want to see the images in the system please run the next CLI in the terminal.
+- If we want to see the images in the system please run the next CLI in the terminal. Try to have the camera without any movement at least for 30 seconds.
 
-Type: “./run_view.sh”
+Type: “./run_viewer.sh”
 
 - --If you want to run the script without visualization please run the next CLI in the terminal.
 
