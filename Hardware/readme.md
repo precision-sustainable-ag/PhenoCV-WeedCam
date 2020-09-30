@@ -30,7 +30,7 @@ The materials list could find in this link
 
   
 
-# Step 1 Micro SD Card and O.
+# Step 1 Micro SD Card and OS.
 
   
 
@@ -107,7 +107,7 @@ Prepare your micro SD card if this one is not new.
 
 - This image file has installed: Remote desktop control, TeamViewer, VNC, complete DepthAI framework and its dependencies.
 
-## Start with DephtAI framework
+# Step 2 Start with DephtAI framework
 
 
 - Install RD Client in you Android Device.
