@@ -153,3 +153,6 @@ Type: “./run.sh”
 You could find there a lot of folders with different date and timestamp, inside of every folder you could find another bunch of folders with the same scene with 4 different frames (RGB, left, right, disparity map)
 
 - Also you can play with the API. [https://docs.luxonis.com](https://docs.luxonis.com/tutorials/hello_world/)
+
+## Username: pi
+## Password: 0000
