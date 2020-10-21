@@ -17,4 +17,6 @@ https://docs.luxonis.com/
 https://colab.research.google.com/github/luxonis/depthai-ml-training/blob/master/colab-notebooks/Easy_Object_Detection_With_Custom_Data_Demo_Training.ipynb
 
 
+## OAK-D-Weed-Cam - UPDATE
+
 
